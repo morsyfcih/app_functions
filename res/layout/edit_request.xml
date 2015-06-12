@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_login"
+    android:orientation="vertical" >
+    
+    
+    
+        <!-- type Label -->
+    <TextView android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text= "@string/requestPurpose"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip"
+        android:textSize="17dip"/>
+    
+    
+   
+    <!-- Input type -->
+    <EditText android:id="@+id/inputType"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:layout_marginBottom="15dip"
+        android:singleLine="true"
+        android:padding="10dp"
+            
+        android:background="@color/white"
+        android:hint="@string/hint_reqtype"
+        android:textColor="@color/input_login"
+        android:textColorHint="@color/input_login_hint"
+       
+        />
+    
+     <!-- Blood Type Label -->
+    <TextView android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/BloodType"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip"
+        android:textSize="17dip"/>
+ 
+   <!-- Input blood type -->
+    <EditText android:id="@+id/inputBlood"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:layout_marginBottom="15dip"
+        android:singleLine="true"
+        android:inputType="numberDecimal"
+        android:padding="10dp"
+        android:background="@color/white"
+        android:hint="@string/action_blood"
+        android:textColor="@color/input_login"
+        android:textColorHint="@color/input_login_hint"
+       
+        
+        />
+
+    
+    <!-- Description Label -->
+    <TextView android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Description"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip"
+        android:textSize="17dip"/>
+  <!-- Input description -->
+    <EditText android:id="@+id/inputDesc"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:layout_marginBottom="15dip"
+        android:lines="6"
+        android:gravity="top"
+        android:padding="10dp"
+        android:background="@color/white"
+        android:textColor="@color/input_login"
+        android:textColorHint="@color/input_login_hint"
+       
+        
+        />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+         >
+
+  <!-- Button Create req -->
+    <Button android:id="@+id/btnSave"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/save"
+        android:layout_weight="1"/>
+ 
+    <!-- Button Create req -->
+    <Button android:id="@+id/btnDelete"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/delete"
+        android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>
