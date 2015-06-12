@@ -1,5 +1,7 @@
 package httpRequest_manager;
 
+import android.app.Activity;
+
 
 
 
